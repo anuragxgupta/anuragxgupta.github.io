@@ -1,0 +1,355 @@
+html {
+	scroll-behavior: smooth
+}
+
+#about, #skills, #experience, #testimonial, #contact {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	color: whitesmoke;
+}
+
+.header {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#background {
+	/*opacity: 0.8;*/
+}
+
+#profile {
+	position: absolute;
+	top: 15%;
+	width: 25vw;
+	left: 12%;
+}
+
+#profile-pic {
+	padding: 10px;
+	width: 25vw;
+	border-radius: 50px;
+}
+
+.text-block {
+	position: absolute;
+	top: 25%;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 20px;
+	left: 45%;
+	right: 0;
+	/*background-color: rgba(169, 169, 169, 0.3);*/
+}
+
+.text-block h4 {
+	color: white;
+	/*color: #ff1b00;*/
+	font-size: 3.5vw;
+	margin-left: 30%;
+}
+
+.text-block p {
+	font-size: 7.5vw;
+	/*font-family: 'Alex Brush';*/
+	font-family: 'Sacramento';
+	font-weight: bold;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff6666, 0 0 40px #ff6666, 0 0 50px #ff6666, 0 0 60px #ff6666, 0 0 70px #ff6666, 0 0 80px #ff6666;
+  }
+}
+
+.header h2 {
+	display: inline-block;
+	margin: 0;
+	margin-left: 11%;
+	height: 25px;
+	font-size: 4vw;
+	/*font-family: 'Alex Brush';*/
+}
+
+.typed-text {
+	display: none;
+}
+
+.typed-cursor {
+	font-size: 4vw;
+	font-weight: 300;
+	color: white;
+	/*font-family: 'Alex Brush';*/
+}
+
+.grp {
+	margin-left: 9%;
+}
+
+.resume {
+	background-color: #ff1b00;
+	color: white;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	cursor: pointer;
+	padding: 10px 20px;
+	font-size: 2vw;
+	/*width: 200px;*/
+}
+
+.resume:hover {
+	background-color: #c10305;
+}
+
+.us {
+	/*background-color: #ff1b00;*/
+	/*color: white;*/
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	padding: 10px 20px;
+	font-size: 2vw;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.about-card {
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px #D00000;
+}
+
+.fab {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 7px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #3B5998;
+}
+
+.fa-facebook-f {
+    color: white;
+    background-color: #3B5998;
+    background: #3B5998;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background: linear-gradient(to bottom right, #0000ff -40%, #ff0000 100%);
+    color: white;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    background: white;
+    color: #990066;
+    text-decoration: none;
+}
+
+.fa-linkedin-in {
+    color: white;
+    text-decoration: none;
+    background: #0066FF;
+}
+
+.fa-linkedin-in:hover {
+    color: #0066FF;
+    background: white;
+    text-decoration: none;
+}
+
+.skills-card {
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.skills-card li {
+    list-style-type: none;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.bar{ /*style the bar*/
+    background-color: #353b48;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #fd1c1c;
+}
+
+.bar span{ /*style the span tag*/
+    height: 5px;
+    float: left;
+    background-color: #fd1c1c;
+}
+
+.java{
+    width: 90%;
+    animation: java 2s;
+}
+
+
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+.html{
+    width: 80%;
+    animation: html 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.python{
+    width: 75%;
+    animation: python 2s;
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 75%;
+    }
+}
+
+.sql{
+    width: 85%;
+    animation: sql 2s;
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 85%;
+    }
+}
+
+.excel{
+    width: 70%;
+    animation: excel 2s;
+}
+
+@keyframes excel{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
+
+
+/*Loader*/
+@keyframes ldio-day4wxzk9fq-1 {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(-45deg) }
+  100% { transform: rotate(0deg) }
+}
+@keyframes ldio-day4wxzk9fq-2 {
+    0% { transform: rotate(180deg) }
+   50% { transform: rotate(225deg) }
+  100% { transform: rotate(180deg) }
+}
+.ldio-day4wxzk9fq > div:nth-child(2) {
+  transform: translate(-15px,0);
+}
+.ldio-day4wxzk9fq > div:nth-child(2) div {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 60px;
+  border-radius: 120px 120px 0 0;
+  background: #fb2100;
+  animation: ldio-day4wxzk9fq-1 1s linear infinite;
+  transform-origin: 60px 60px
+}
+.ldio-day4wxzk9fq > div:nth-child(2) div:nth-child(2) {
+  animation: ldio-day4wxzk9fq-2 1s linear infinite
+}
+.ldio-day4wxzk9fq > div:nth-child(2) div:nth-child(3) {
+  transform: rotate(-90deg);
+  animation: none;
+}@keyframes ldio-day4wxzk9fq-3 {
+    0% { transform: translate(190px,0); opacity: 0 }
+   20% { opacity: 1 }
+  100% { transform: translate(70px,0); opacity: 1 }
+}
+.ldio-day4wxzk9fq > div:nth-child(1) {
+  display: block;
+}
+.ldio-day4wxzk9fq > div:nth-child(1) div {
+  position: absolute;
+  top: 92px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fffdfd;
+  animation: ldio-day4wxzk9fq-3 1s linear infinite
+}
+.ldio-day4wxzk9fq > div:nth-child(1) div:nth-child(1) { animation-delay: -0.67s }
+.ldio-day4wxzk9fq > div:nth-child(1) div:nth-child(2) { animation-delay: -0.33s }
+.ldio-day4wxzk9fq > div:nth-child(1) div:nth-child(3) { animation-delay: 0s }
+.loadingio-spinner-bean-eater-157mhpx6axn {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #000000;
+}
+.ldio-day4wxzk9fq {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-day4wxzk9fq div { box-sizing: content-box; }
+/*Loader End*/
