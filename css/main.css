@@ -206,14 +206,14 @@ html {
     background-color: #fd1c1c;
 }
 
-.java{
+.python{
     width: 90%;
-    animation: java 2s;
+    animation: python 2s;
 }
 
 
 
-@keyframes java{
+@keyframes python{
     0%{
         width: 0%;
     }
@@ -238,12 +238,12 @@ html {
     }
 }
 
-.python{
+.java{
     width: 75%;
-    animation: python 2s;
+    animation: java 2s;
 }
 
-@keyframes python{
+@keyframes java{
     0%{
         width: 0%;
     }
